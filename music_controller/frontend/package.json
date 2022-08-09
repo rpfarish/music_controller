@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build; python music_controller/manage.py runserver",
     "deploy": " gh-pages -d build",
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production"
